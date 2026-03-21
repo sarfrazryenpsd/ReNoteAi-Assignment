@@ -1,6 +1,5 @@
-package com.ryen.renoteaiassignment.ui.theme
+package com.ryen.renoteaiassignment.presentation.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

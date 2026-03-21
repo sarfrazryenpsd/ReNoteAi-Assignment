@@ -1,4 +1,4 @@
-package com.ryen.renoteaiassignment.ui.theme
+package com.ryen.renoteaiassignment.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
