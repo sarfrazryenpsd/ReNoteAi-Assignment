@@ -1,5 +1,6 @@
 package com.ryen.renoteaiassignment.di
 
+import com.ryen.renoteaiassignment.data.datasource.remote.UserRemoteDatasource
 import com.ryen.renoteaiassignment.data.datasource.remote.UserService
 import dagger.Module
 import dagger.Provides
@@ -42,5 +43,12 @@ object NetworkModule{
     fun provideUserApi(retrofit: Retrofit): UserService =
         retrofit.create(UserService::class.java)
 
+    @Provides
+    @Singleton
+    fun provideUserRemoteDatasource(api: UserService) = UserRemoteDatasource(api)
 
 }
+
+
+
+

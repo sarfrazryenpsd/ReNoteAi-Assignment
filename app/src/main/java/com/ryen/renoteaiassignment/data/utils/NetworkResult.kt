@@ -1,4 +1,4 @@
-package com.ryen.renoteaiassignment.utils
+package com.ryen.renoteaiassignment.data.utils
 
 import retrofit2.HttpException
 import retrofit2.Response
