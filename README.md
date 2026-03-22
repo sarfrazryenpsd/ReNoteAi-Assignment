@@ -4,12 +4,20 @@ A simple Android app that fetches users from [JSONPlaceholder](https://jsonplace
 
 ---
 
+## Download
+
+[Download APK](https://github.com/sarfrazryenpsd/ReNoteAi-Assignment/apk/app-debug.apk)
+
+> Note: This is a debug build for evaluation purposes.
+
+---
+
 ## How to Run
 
 1. Clone the repository
 2. Open in **Android Studio Meerkat** or later
 3. Let Gradle sync complete
-4. Run on a device or emulator with **API 24+**
+4. Run on a device or emulator with **API 26+**
 
 No API keys or local configuration required.
 
