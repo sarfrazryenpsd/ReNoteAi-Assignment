@@ -8,13 +8,16 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface UserDao {
     @Query("SELECT * FROM users ORDER BY name ASC")
-    fun getAllUsers(): Flow<List<UserEntity>>  // Flow — auto-updates UI on change
+    fun getAllUsers(): Flow<List<UserEntity>>
 
     @Query("SELECT * FROM users WHERE id = :id")
     fun getUserById(id: Int): Flow<UserEntity>
 
     @Query("SELECT id FROM users WHERE isFavorite = 1")
     fun getFavoriteUserIds(): Flow<List<Int>>
+
+    @Query("SELECT * FROM users WHERE isFavorite = 1")
+    fun getFavoriteUsers(): Flow<List<UserEntity>>
 
     @Query("SELECT isFavorite FROM users WHERE id = :id")
     suspend fun isFavorite(id: Int): Boolean

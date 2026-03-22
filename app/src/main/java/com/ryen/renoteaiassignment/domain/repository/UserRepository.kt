@@ -9,6 +9,8 @@ interface UserRepository {
 
     fun getUserById(id: Int): Flow<User>
 
+    fun getFavoriteUsers(): Flow<List<User>>
+
     suspend fun refreshUsers(): Result<Unit>
 
     suspend fun toggleFavourite(id: Int)

@@ -45,6 +45,12 @@ class UserRepositoryImpl @Inject constructor(
 
     }
 
+    override fun getFavoriteUsers(): Flow<List<User>> =
+        userDao.getFavoriteUsers().map { entities ->
+            entities.map { it.toUser() }
+        }
+
+
     override suspend fun toggleFavourite(id: Int) =
         userDao.toggleFavorite(id)
 
