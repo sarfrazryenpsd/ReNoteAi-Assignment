@@ -1,4 +1,4 @@
-# User Directory — Android Assignment
+# ReNoteAi-Assignment
 
 A simple Android app that fetches users from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users) and displays them in a list with search, favorites, and offline support.
 
