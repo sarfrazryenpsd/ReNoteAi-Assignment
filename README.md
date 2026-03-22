@@ -6,7 +6,7 @@ A simple Android app that fetches users from [JSONPlaceholder](https://jsonplace
 
 ## Download
 
-[Download APK](https://github.com/sarfrazryenpsd/ReNoteAi-Assignment/apk/app-debug.apk)
+[Download APK](https://github.com/sarfrazryenpsd/ReNoteAi-Assignment/blob/main/apk/app-debug.apk)
 
 > Note: This is a debug build for evaluation purposes.
 
